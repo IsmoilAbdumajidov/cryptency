@@ -122,7 +122,7 @@ body{
     text-align: center;
 }
 .rgb{
-    background: linear-gradient(45deg,#FFC107 60%,#ffff00 5%,#fff 100%);
+    background: linear-gradient(45deg,#ffc10775 60%,#ffff008f 5%,#fff 100%);
 }
 .color{
     color: #FFC107;
