@@ -127,3 +127,6 @@ body{
 .color{
     color: #FFC107;
 }
+.blog_ul{
+    list-style: none;
+}
