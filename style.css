@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Montserrat', sans-serif;  color: #fff;}
+.navbar_img{
+    width: 60px;
+}
+
+body{
+    background: #000 !important; 
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid{
+    max-width: 2000px;
+}
+.header_menu{
+    transition: all .3s linear;
+}
+.header_menu .dropdown-menu{
+    background: #000;
+    
+}
+.header_menu ul li a{
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    transition: all .5s linear;
+}
+.header_menu ul li a:hover{
+    color: #FFCA2C;
+}
+
+.header_menu ul li a:focus{
+    color: #fff;
+}
+.btn_orage{
+    width: 200px;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: #FFC107;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #FFC107;
+    font-size: 16px;
+    transition: all .3s linear;
+}
+.btn_orage:hover{
+    color: #FFC107;
+    background-color: transparent;
+
+}
+.menue_btn{
+    border: none;
+    outline: none;
+}
+.footer{
+    background: rgba(255,255, 255, 0.1);
+    border-radius: 80px 80px 0 0;
+}
+.footer ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+    margin: 15px 0;
+}
+
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    transition: all .5s linear;
+    z-index: 100;
+}
+.fixed-nav ul li a{
+    color: #000;
+    transition: all .3s linear;
+}
+.fixed-nav ul li a:focus{
+    color: #000;
+}
+
+.fixed-nav a,
+.fixed-nav h1,
+.fixed-nav .menue_btn i
+{
+    color: #000;
+}
+.fixed-nav .dropdown-menu{
+    background: #fff;
+    color: #000;
+}
+.p-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+
+.obility .card img{
+    width: 200px !important;
+}
+.line{
+    border-top: 2px solid #FFC107;
+    padding-top: 40px;
+}
+.about_company .card h1{
+    color: #FFC107;
+    text-align: center;
+}
+.rgb{
+    background: linear-gradient(45deg,#FFC107 60%,#ffff00 5%,#fff 100%);
+}
+.color{
+    color: #FFC107;
+}
