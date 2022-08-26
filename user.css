@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Montserrat', sans-serif;}
+*::selection{
+    background-color: #FFC107;
+}
+.navbar_img{
+    width: 60px;
+}
+
+body{
+    color: #000;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container-fluid{
+    max-width: 2000px;
+}
+.header_menu{
+    transition: all .3s linear;
+    box-shadow: 0 5px 15px #e9e8e8;
+}
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    transition: all .5s linear;
+    z-index: 100;
+
+}
+
+.header_menu ul li{
+    font-weight: 600;
+    font-size: 15px !important;
+    color: #000;
+    transition: all .5s linear;
+}
+.header_menu ul li:hover{
+    color: #FFCA2C;
+}
+
+.btn_orage{
+    width: 200px;
+    text-transform: uppercase;
+    font-size: 15px;
+    background: #FFC107;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid #FFC107;
+    font-size: 16px;
+    transition: all .3s linear;
+}
+.btn_orage:hover{
+    color: #FFC107;
+    background-color: transparent;
+
+}
+.menue_btn{
+    border: none;
+    outline: none;
+}
+.footer{
+    background: #000;
+    border-radius: 80px 80px 0 0;
+    color: #fff;
+}
+.footer ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}
+.footer ul{
+    list-style: none;
+}
+.footer ul li{
+    margin: 15px 0;
+}
+
+.p-100{
+    padding-top: 100px;
+}
+.pb-100{
+    padding-bottom: 100px;
+}
+.mt-100{
+    margin-top: 100px;
+}
+.mb-100{
+    margin-bottom: 100px;
+}
+
+.line{
+    border-top: 2px solid #FFC107;
+    padding-top: 40px;
+}
+
+.color{
+    color: #FFC107;
+}
+.blog_ul{
+    list-style: none;
+}
+.small p{
+    font-size: 12px;
+}
+.footer input{
+    color: #fff !important;
+}
+.attention{
+    color: #000;
+    background: #ffc10718;
+    border: 1px solid #FFC107;
+    list-style: circle;
+}
+.attention li::marker{
+    color: #FFC107 !important;
+    background: #FFC107 !important;
+}
+.singupCard{
+    width: 40%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 100px;
+    border-radius: 10px;
+    /* padding: 20px 20px 0 20px; */
+}
+.dNone{
+    display: none;
+}
+.active{
+    display: block !important;
+}
+.content{
+    display: none;
+}
+.tap-btn{
+    cursor: pointer;
+}
+@media screen and (max-width:1000px) {
+    .singupCard{
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 100px;
+        border-radius: 10px;
+        /* padding: 20px 20px 0 20px; */
+    }
+}
