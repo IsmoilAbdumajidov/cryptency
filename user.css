@@ -119,16 +119,24 @@ body{
     background: #FFC107 !important;
 }
 .singupCard{
-    width: 40%;
+    width: 35%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 100px;
-    border-radius: 10px;
+    margin-top: 60px;
+    border-radius: 5px;
+    padding: 10px;
     /* padding: 20px 20px 0 20px; */
+}
+.singupCard input:focus{
+    border: 1px solid #FFC107 !important;
+    
 }
 .dNone{
     display: none;
+}
+.form_check{
+    padding: 11px 30px;
 }
 .active{
     display: block !important;
@@ -136,12 +144,101 @@ body{
 .content{
     display: none;
 }
+.content1{
+    display: none;
+}
 .tap-btn{
     cursor: pointer;
 }
+.right-content{
+    width: 100%;
+    height: auto;
+    margin-left: 300px;
+    position: relative;
+    /* border: 2px solid; */
+    z-index: 20;
+}
+.left_content {
+    width: 300px;
+    position: absolute;
+    height: 100%;
+    transition: all .3s linear;
+    color: #000;
+    background-color: #fff;
+    z-index: 99;
+}
+.circle-img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+}
+.imgDiv{
+    width: 100px;
+    border-radius: 50%;
+}
+.fs-13{
+    font-size: 13px !important;
+}
+.grey{
+    color: grey;
+    text-decoration:none;
+    transition: all .2s linear;
+}
+.grey:hover{
+    text-decoration: solid underline;
+    color: grey;
+}
+
+.userMenu{
+    list-style: none;
+    padding: 0;
+}
+.userMenu li{
+    margin: 10px 0;
+    padding: 5px;
+    transition: all .3s linear;
+    border-radius: 5px;
+    color: #808080;
+    cursor: pointer;
+}
+.userMenu li:hover{
+    background: #DFE1E5;
+    color: #808080;
+}
+.circle{
+    border-radius: 50%;
+    width: 290px;
+    height: 290px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.border-circle1{
+    border: 25px solid #B2F2D3;
+}
+.border-circle2{
+    border: 25px solid #B8D4FE;
+}
+.settingsMenue p{
+    transition: all .2s linear;
+    border-bottom: 3px solid  transparent;
+    cursor: pointer;
+}
+.settingsMenue p:hover{
+    border-bottom: 3px solid #FFC107;
+}
+.fs-14{
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
 @media screen and (max-width:1000px) {
     .singupCard{
-        width: 90%;
+        width:90%;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
