@@ -141,6 +141,10 @@ body{
 .form_check{
     padding: 11px 30px;
 }
+.form_check:checked{
+    background-color: #FFC107 !important;
+    border-color: #FFC107 !important;
+}
 .active{
     display: block !important;
 }
