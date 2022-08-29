@@ -1,25 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
-*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Montserrat', sans-serif;}
-*::selection{
-    background-color: #FFC107;
-}
-.navbar_img{
-    width: 60px ;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
-body{
+*::selection {
+    background-color: #FFC107;
+}
+
+.navbar_img {
+    width: 60px;
+}
+
+body {
     color: #000;
     font-family: 'Montserrat', sans-serif;
 }
 
-.container-fluid{
+.container-fluid {
     max-width: 2000px;
 }
-.header_menu{
+
+.header_menu {
     transition: all .3s linear;
     box-shadow: 0 5px 15px #e9e8e8;
 }
-.fixed-nav{
+
+.fixed-nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -29,21 +39,23 @@ body{
     z-index: 100;
 
 }
-.get_file{
+
+.get_file {
     cursor: pointer;
 }
 
-.header_menu ul li{
+.header_menu ul li {
     font-weight: 600;
-    font-size: 15px !important;
+    font-size: 14px !important;
     color: #000;
     transition: all .5s linear;
 }
-.header_menu ul li:hover{
+
+.header_menu ul li:hover {
     color: #FFCA2C;
 }
 
-.btn_orage{
+.btn_orage {
     width: 200px;
     text-transform: uppercase;
     font-size: 15px;
@@ -54,74 +66,89 @@ body{
     font-size: 16px;
     transition: all .3s linear;
 }
-.btn_orage:hover{
+
+.btn_orage:hover {
     color: #FFC107;
     background-color: transparent;
 
 }
-.menue_btn{
+
+.menue_btn {
     border: none;
     outline: none;
 }
-.footer{
+
+.footer {
     background: #000;
     border-radius: 80px 80px 0 0;
     color: #fff;
 }
-.footer ul li a{
+
+.footer ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
     font-size: 15px;
 }
-.footer ul{
+
+.footer ul {
     list-style: none;
 }
-.footer ul li{
+
+.footer ul li {
     margin: 15px 0;
 }
 
-.p-100{
+.p-100 {
     padding-top: 100px;
 }
-.pb-100{
+
+.pb-100 {
     padding-bottom: 100px;
 }
-.mt-100{
+
+.mt-100 {
     margin-top: 100px;
 }
-.mb-100{
+
+.mb-100 {
     margin-bottom: 100px;
 }
 
-.line{
+.line {
     border-top: 2px solid #FFC107;
     padding-top: 40px;
 }
 
-.color{
+.color {
     color: #FFC107;
 }
-.blog_ul{
+
+.blog_ul {
     list-style: none;
 }
-.small p{
+
+.small p {
     font-size: 12px;
 }
-.footer input{
+
+.footer input {
     color: #fff !important;
 }
-.attention{
+
+.attention {
     color: #000;
     background: #ffc10718;
     border: 1px solid #FFC107;
     list-style: circle;
 }
-.attention li::marker{
+
+.attention li::marker {
     color: #FFC107 !important;
     background: #FFC107 !important;
 }
-.singupCard{
+
+.singupCard {
     width: 35%;
     position: relative;
     left: 50%;
@@ -131,33 +158,42 @@ body{
     padding: 10px;
     /* padding: 20px 20px 0 20px; */
 }
-.singupCard input:focus{
+
+.singupCard input:focus {
     border: 1px solid #FFC107 !important;
-    
+
 }
-.dNone{
+
+.dNone {
     display: none;
 }
-.form_check{
+
+.form_check {
     padding: 11px 30px;
 }
-.form_check:checked{
+
+.form_check:checked {
     background-color: #FFC107 !important;
     border-color: #FFC107 !important;
 }
-.active{
+
+.active {
     display: block !important;
 }
-.content{
+
+.content {
     display: none;
 }
-.content1{
+
+.content1 {
     display: none;
 }
-.tap-btn{
+
+.tap-btn {
     cursor: pointer;
 }
-.right-content{
+
+.right-content {
     width: 100%;
     height: auto;
     margin-left: 300px;
@@ -165,6 +201,7 @@ body{
     /* border: 2px solid; */
     z-index: 20;
 }
+
 .left_content {
     width: 300px;
     position: absolute;
@@ -174,20 +211,23 @@ body{
     background-color: #fff;
     z-index: 99;
 }
-.circle-img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
-   border-radius: 50%;
-   display: block;
+
+.circle-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
 }
-.imgDiv{
+
+.imgDiv {
     width: 100px;
     height: 100px;
     position: relative;
     border-radius: 50%;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -200,6 +240,7 @@ body{
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 50%;
 }
+
 .overlay_icon {
     color: white;
     position: absolute;
@@ -209,29 +250,31 @@ body{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .imgDiv:hover .overlay {
     opacity: 1;
-  }
-
-
-.fs-13{
-    font-size: 13px !important;
 }
-.grey{
+
+
+
+
+.grey {
     color: grey;
-    text-decoration:none;
+    text-decoration: none;
     transition: all .2s linear;
 }
-.grey:hover{
+
+.grey:hover {
     text-decoration: solid underline;
     color: grey;
 }
 
-.userMenu{
+.userMenu {
     list-style: none;
     padding: 0;
 }
-.userMenu li{
+
+.userMenu li {
     margin: 10px 0;
     padding: 5px;
     transition: all .3s linear;
@@ -239,11 +282,13 @@ body{
     color: #808080;
     cursor: pointer;
 }
-.userMenu li:hover{
+
+.userMenu li:hover {
     background: #DFE1E5;
     color: #808080;
 }
-.circle{
+
+.circle {
     border-radius: 50%;
     width: 290px;
     height: 290px;
@@ -255,61 +300,78 @@ body{
     justify-content: center;
     align-items: center;
 }
-.border-circle1{
+
+.border-circle1 {
     border: 25px solid #B2F2D3;
 }
-.border-circle2{
+
+.border-circle2 {
     border: 25px solid #B8D4FE;
 }
-.settingsMenue p{
+
+.settingsMenue p {
     transition: all .2s linear;
-    border-bottom: 3px solid  transparent;
+    border-bottom: 3px solid transparent;
     cursor: pointer;
 }
-.settingsMenue p:hover{
+
+.settingsMenue p:hover {
     border-bottom: 3px solid #FFC107;
 }
-.fs-14{
+
+.fs-14 {
     font-size: 14px !important;
     font-weight: 500 !important;
 }
-.fs-12{
-    font-size: 12px;
+
+.fs-12 {
+    font-size: 12px !important;
 }
-.fs-11{
-    font-size: 11px;
+
+.fs-11 {
+    font-size: 11px !important;
 }
-.purchase_card{
-    background: url('imgs/1612579354_5-p-fon-dlya-prezentatsii-oranzhevii-s-zelenim-6.jpg');
+.fs-13 {
+    font-size: 13px !important;
+}
+
+.purchase_card {
+    background:linear-gradient(rgba(0, 0, 0, .3),rgba(0, 0, 0, .3)), url('imgs/1612579354_5-p-fon-dlya-prezentatsii-oranzhevii-s-zelenim-6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.video{
+
+.video {
     height: 300px !important;
 }
+
 .video_card {
     position: relative;
     cursor: pointer;
     position: relative;
-  }
-  .intro_pic {
+}
+
+.intro_pic {
     width: 100%;
     height: 100%;
     position: absolute;
-  }
-  .wrapper {
+}
+
+.wrapper {
     width: 100%;
     height: 100%;
     position: absolute;
     background: rgba(0, 0, 0, 0.6);
     z-index: 5;
-  }
-  .video_card:hover .play,
-  .video_card:hover .wrapper {
+}
+
+.video_card:hover .play,
+.video_card:hover .wrapper {
     color: #a3821e;
-  }
-  .play {
+}
+
+.play {
     position: absolute;
     z-index: 6;
     color: #ffc107;
@@ -317,10 +379,16 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
+.menue_img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
 @media screen and (max-width:1000px) {
-    .singupCard{
-        width:90%;
+    .singupCard {
+        width: 90%;
         position: relative;
         left: 50%;
         transform: translateX(-50%);
@@ -329,8 +397,9 @@ body{
         /* padding: 20px 20px 0 20px; */
     }
 }
+
 @media screen and (max-width:992px) {
-    .right-content{
+    .right-content {
         width: 100%;
         height: auto;
         margin-left: 0;
@@ -338,6 +407,7 @@ body{
         /* border: 2px solid; */
         z-index: 20;
     }
+
     .left_content {
         width: 300px;
         height: auto;
@@ -353,12 +423,14 @@ body{
         display: none;
 
     }
-    .imgDiv{
+
+    .imgDiv {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
     }
 }
+
 @media screen and (max-width:400px) {
     .left_content {
         width: 100%;
@@ -372,7 +444,8 @@ body{
         background-color: #fff;
         z-index: 99;
     }
-    .circle{
+
+    .circle {
         border-radius: 50%;
         width: 250px;
         height: 250px;
