@@ -26,19 +26,25 @@
                     <div class="container-fluid">
                         <a class="navbar-brand d-flex align-items-center" href="index.html">
                             <img class="navbar_img" src="imgs/IMG_20220823_220346-removebg-preview.png" alt="">
-                            <h1>Cryptency</h1>
+                            <h3 class="fw-bold">Cryptency</h3>
                         </a>
                         <button id="btn_header" class="d-block d-lg-none menue_btn bg-transparent" type="button">
                             <i class="fa-solid fa-bars-staggered fa-2x"></i>
                         </button>
                         <div class="collapse navbar-collapse">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 col justify-content-start me-5 text-uppercase">
-                                <li class="mx-3 my-2 fs-6 fw-bold tap-btn" data-id="myOfficde">МОЙ КАБИНЕТ</li>
-                                <li class="mx-3 my-2 fs-6 fw-bold tap-btn" data-id="myAccount">МОИ НАЧИСЛЕНИЯ</li>
-                                <li class="mx-3 my-2 fs-6 fw-bold tap-btn" data-id="withDrawals">ВЫВОД СРЕДСТВ</li>
+                            <ul class="navbar-nav mb-2 mb-lg-0 col justify-content-end me-5 text-uppercase">
+                                <li class="mx-3 my-2 fw-bold tap-btn" data-id="myOfficde">МОЙ КАБИНЕТ</li>
+                                <li class="mx-3 my-2 fw-bold tap-btn" data-id="myAccount">МОИ НАЧИСЛЕНИЯ</li>
+                                <li class="mx-3 my-2 fw-bold tap-btn" data-id="withDrawals">ВЫВОД СРЕДСТВ</li>
+                                <li class="mx-3 my-2 fw-bold tap-btn" data-id="contact">Contact</li>
                             </ul>
                             <div class="d-flex align-items-center gap-3">
-                                <div class="fw-bold fs-14 btn btn-warning">0 RUB</div>
+                                <div class="fw-bold fs-13">0 RUB</div>
+                                <div class="menue_img">
+                                    <img class="circle-img"
+                                    src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bWFuJTIwZmFzZSUyMHRvJTIwZmFzZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+                                    alt="">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -62,14 +68,12 @@
                             </div>
                         </div>
                 </div>
-
+                <h6 class="my-3 text-center text-lg-start">Abdumajidov Ismoil</h6>
                 <button class="btn btn-warning fs-13 my-3 w-100" data-id="purchase">Оформить покупку</button><br>
                 <div class="d-flex justify-content-between mt-3  pe-3">
                     <a href="#" class="fs-13 grey">Скопировать промокод</a><i class="fa-solid fa-link"></i>
                 </div>
-                <div class="d-flex justify-content-between mb-3  pe-3">
-                    <a href="#" class="fs-13 grey">Скопировать промокод</a><i class="fa-solid fa-link"></i>
-                </div>
+                
 
                 <ul class="userMenu ">
                     <div class="navbar-nav d-block d-lg-none text-uppercase">
@@ -84,6 +88,10 @@
                         <li class="my-2 fs-14 tap-btn" data-id="withDrawals">
                             <i class="fa-solid fa-wallet me-2"></i>
                             ВЫВОД СРЕДСТВ
+                        </li>
+                        <li class="my-2 fs-14 tap-btn"  data-id="contact">
+                            <i class="fa-solid fa-phone-volume me-2"></i>
+                            Contact
                         </li>
                     </div>
 
@@ -891,9 +899,18 @@
             </section>
             <section class="purchase  content right-content" id="purchase">
                 <div class="container">
-                    <div class="header_content mb-100">
-                        <h1 class="display-6 fw-bold">Оформить покупку</h1>
-                        <p>Выберите один из продуктов</p>
+                    <div class="header_content mb-100 row justify-content-center">
+                        <div class="col-12 col-sm-8 col-md-9 col-lg-10">
+                            <h1 class="display-6 fw-bold">Оформить покупку</h1>
+                            <p>Выберите один из продуктов</p>
+                        </div>
+                        <div class="col-5 col-sm-4 col-md-3 col-lg-2">
+                            <select name="" id="" class="form-select">
+                                <option value="1">USD</option>
+                                <option value="2">RUB</option>
+                                <option value="3">BYN</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="row bg-light mt-4">
                         <div class="col-12 col-md-4 p-md-0">
@@ -907,7 +924,7 @@
                                     <h2 class="card-title my-4 fw-bold">* 599 USD</h2>
                                     <p class="card-text fs-12 my-4">* Скидка доступна при наличии промокода</p>
                                     <center>
-                                        <a href="#" class="btn btn-warning">Go somewhere</a>
+                                        <a href="#" class="btn btn-warning d-inline d-md-none">Go somewhere</a>
                                     </center>
                                 </div>
                             </div>
@@ -928,6 +945,7 @@
                             <p>-доступ к приложениям партнеров</p>
                             <h6 class=" fw-bold my-3 ">СРОК ДЕЙСТВИЯ НЕ ОГРАНИЧЕН</h6>
                             <h6 class=" fw-bold my-3 ">БОНУСНАЯ РЕФЕРАЛЬНАЯ ПРОГРАММА  Smart Start</h6>
+                            <a href="#" class="btn btn-warning d-none d-md-inline">Go somewhere</a>
                            </div>
                         </div>
                     </div>
@@ -943,7 +961,7 @@
                                             <h2 class="card-title my-4 fw-bold">* 599 USD</h2>
                                             <p class="card-text fs-12 my-4">* Скидка доступна при наличии промокода</p>
                                             <center>
-                                                <a href="#" class="btn btn-warning">Go somewhere</a>
+                                                <a href="#" class="btn btn-warning d-inline d-md-none">Go somewhere</a>
                                             </center>
                                         </div>
                                     </div>
@@ -964,6 +982,7 @@
                                         <p>-доступ к приложениям партнеров</p>
                                         <h6 class="fw-bold my-3 ">СРОК ДЕЙСТВИЯ НЕ ОГРАНИЧЕН</h6>
                                         <h6 class="fw-bold my-3 ">БОНУСНАЯ РЕФЕРАЛЬНАЯ ПРОГРАММА Smart Start</h6>
+                                            <a href="#" class="btn btn-warning d-none d-md-inline">Go somewhere</a>
                                     </div>
                                 </div>
                             </div>
@@ -1032,6 +1051,37 @@
                     </div>
                 </div>
             </section>
+            <section class="contact content right-content" id="contact">
+                <div class="container">
+                    <div class="header_content mb-100">
+                        <h1 class="display-6 fw-bold border-bottom py-2">Contact</h1>
+                    </div>
+                    <div class="row align-items-center border p-5 m-4">
+                        <div class="col-12 col-xl-6 mt-5 mt-xl-0">
+                            <div class="d-flex align-items-center">
+                                <img class="navbar_img" src="imgs/IMG_20220823_220346-removebg-preview.png" alt="">
+                                <h1>Cryptency</h1>
+                            </div>
+                            <p class="fs-12">Телефон (Служба заботы):</p>
+                            <h5 class="fw-bold text-warning">+998335990075</h5>
+                            <p class="fs-12">Email (Служба заботы):</p>
+                            <h5 class="fw-bold text-warning">lorem@smartupglobal.com</h5>
+                            <button class="btn btn-warning btn_orage fw-bold">Instagram</button>
+                        </div>
+                        <div class="col-12 col-xl-6 mt-5 mt-xl-0">
+                            <h6 class="fs-14 fw-bold">МЫ ОТКРЫТЫ К ЛЮБЫМ ПРЕДЛОЖЕНИЯМ И ИДЕЯМ ДЛЯ СОТРУДНИЧЕСТВА</h6>
+                            <form action="">
+                                <input type="text" class="form-control bg-transparent" name="" id="" placeholder="Username">
+                                <input type="text" class="form-control bg-transparent my-3" name="" id=""
+                                    placeholder="Email adress">
+                                <textarea name="" id="" cols="30" class="form-control bg-transparent my-3"
+                                    placeholder="Message"></textarea>
+                                <button class="btn btn-warning w-100 py-2 btn_orage fw-bold">Sendbutton</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </div>
         <section class="footer py-5 mt-100">
             <div class="container">
@@ -1083,165 +1133,7 @@
         crossorigin="anonymous"></script>
     <!-- Bootstrap js link -->
     <!-- Basic JS -->
-    <script>
-        let input1 = document.querySelector('.password1')
-        let input2 = document.querySelector('.password2')
-        let input3 = document.querySelector('.password3')
-        let btn1 = document.querySelector('#pass1')
-        let btn2 = document.querySelector('#pass2')
-        let btn3 = document.querySelector('#pass3')
-        let error = document.querySelector('.error')
-        const purchase_text_btn = document.querySelectorAll(('.purchase_text_btn'))
-        purchase_text_btn.forEach(item => {
-            // console.log(item.parentElement.children[1]);
-            item.addEventListener('click', (e) => {
-                item.parentElement.children[1].classList.toggle('d-none')
-                if (item.children[1].style.transform == 'rotate(180deg)') {
-                    item.children[1].style.transform = 'rotate(0deg)';
-                }
-                else {
-                    item.children[1].style.transform = 'rotate(180deg)';
-                }
-            })
-        })
-
-        let get_file = document.querySelectorAll('.get_file')
-        get_file.forEach(item =>{
-            item.addEventListener('click', function(){
-                item.children[0].click()
-            });
-        })
-
-        let videos_section = document.querySelector(".videos_section");
-        let video_card = document.querySelectorAll(".video_card");
-        let intro = document.querySelector(".intro");
-        video_card.forEach((item) => {
-            item.addEventListener("click", function () {
-                item.children[0].style.display = "none";
-            });
-        });
-        // console.log(btn1.childNodes);
-        input2.addEventListener('blur', () => {
-
-            if (input1.value.match(/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])([a-zA-Z0-9]{8,})$/)) {
-                // console.log(input1.value);
-                // console.log('True');
-                error.classList.add('dNone')
-            }
-            else {
-                error.classList.remove('dNone')
-                // console.log('Error');
-            }
-        });
-        let arr = [btn1, btn2, btn3]
-        arr.forEach(btn => {
-            btn.addEventListener('click', () => {
-                if (input1.type == 'password') {
-                    input1.type = 'text'
-                    input2.type = 'text'
-                    input3.type = 'text'
-                    btn1.children[0].classList.add('fa-eye-slash')
-                    btn1.children[0].classList.remove('a-eye')
-                    btn2.children[0].classList.add('fa-eye-slash')
-                    btn2.children[0].classList.remove('a-eye')
-                    btn3.children[0].classList.add('fa-eye-slash')
-                    btn3.children[0].classList.remove('a-eye')
-                }
-                else {
-                    input1.type = 'password'
-                    input2.type = 'password'
-                    input3.type = 'password'
-                    btn1.children[0].classList.remove('fa-eye-slash')
-                    btn1.children[0].classList.add('a-eye')
-                    btn2.children[0].classList.remove('fa-eye-slash')
-                    btn2.children[0].classList.add('a-eye')
-                    btn3.children[0].classList.remove('fa-eye-slash')
-                    btn3.children[0].classList.add('a-eye')
-                }
-            })
-        })
-
-
-
-
-
-
-
-
-        const about = document.querySelector(".about");
-        const btns = document.querySelectorAll(".tab-btn");
-        const articles = document.querySelectorAll(".content");
-
-        const btn_header = document.getElementById('btn_header')
-
-        btn_header.addEventListener('click', () => {
-            left_content.classList.toggle('active')
-        })
-        about.addEventListener("click", function (e) {
-            const id = e.target.dataset.id;
-            if (id) {
-                // // remove selected from other buttons
-                // btns.forEach(function (btn) {
-                // btn.classList.remove("active");
-                // });
-                e.target.classList.add("active");
-                // hide other articles
-                articles.forEach(function (article) {
-                    article.classList.remove("active");
-                });
-                const element = document.getElementById(id);
-                element.classList.add("active");
-                left_content.classList.remove('active')
-            }
-        });
-
-        const setBtn = document.querySelectorAll(".sett-btn");
-        const articles1 = document.querySelectorAll(".content1");
-        const setting = document.querySelector(".mySettings");
-        let left_content = document.querySelector('.left_content')
-
-        setting.addEventListener("click", function (e) {
-            const id = e.target.dataset.bsTarget
-            if (id) {
-                // // remove selected from other buttons
-                // btns.forEach(function (btn) {
-                // btn.classList.remove("active");
-                // });
-                e.target.classList.add("active");
-                // hide other articles
-                articles1.forEach(function (article) {
-                    article.classList.remove("active");
-                });
-
-                const element = document.getElementById(id);
-                element.classList.add("active");
-            }
-        });
-
-
-
-
-
-        (() => {
-            'use strict'
-
-            // Fetch all the forms we want to apply custom Bootstrap validation styles to
-            const forms = document.querySelectorAll('.needs-validation')
-            // console.log(forms);
-
-            // Loop over them and prevent submission
-            Array.from(forms).forEach(form => {
-                form.addEventListener('submit', event => {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
-    </script>
+        <script src="userpanel.js"></script>
 </body>
 
 </html>
