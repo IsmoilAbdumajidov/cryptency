@@ -12,7 +12,7 @@
 }
 
 .navbar_img {
-    width: 60px;
+    width: 45px;
 }
 
 body {
@@ -79,26 +79,22 @@ body {
 }
 
 .footer {
-    background: #000;
-    border-radius: 80px 80px 0 0;
-    color: #fff;
+    background: #fafafa;
+    /* border-radius: 80px 80px 0 0; */
 }
 
 .footer ul li a {
-    color: #fff;
     text-decoration: none;
-    font-weight: bold;
     font-size: 15px;
+    color: #000;
+    transition: all .3s linear;
 }
-
+.footer ul li a:hover{
+    color: #FFC107;
+}
 .footer ul {
     list-style: none;
 }
-
-.footer ul li {
-    margin: 15px 0;
-}
-
 .p-100 {
     padding-top: 100px;
 }
@@ -131,11 +127,6 @@ body {
 .small p {
     font-size: 12px;
 }
-
-.footer input {
-    color: #fff !important;
-}
-
 .attention {
     color: #000;
     background: #ffc10718;
@@ -385,6 +376,19 @@ body {
     height: 35px;
     border-radius: 50%;
 }
+.footer_icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 55px;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.footer_icon:hover{
+    color: #ffc107;
+}
+
 
 @media screen and (max-width:1000px) {
     .singupCard {
