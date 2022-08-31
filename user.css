@@ -89,12 +89,15 @@ body {
     color: #000;
     transition: all .3s linear;
 }
-.footer ul li a:hover{
+
+.footer ul li a:hover {
     color: #FFC107;
 }
+
 .footer ul {
     list-style: none;
 }
+
 .p-100 {
     padding-top: 100px;
 }
@@ -127,6 +130,7 @@ body {
 .small p {
     font-size: 12px;
 }
+
 .attention {
     color: #000;
     background: #ffc10718;
@@ -279,26 +283,6 @@ body {
     color: #808080;
 }
 
-.circle {
-    border-radius: 50%;
-    width: 290px;
-    height: 290px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.border-circle1 {
-    border: 25px solid #B2F2D3;
-}
-
-.border-circle2 {
-    border: 25px solid #B8D4FE;
-}
 
 .settingsMenue p {
     transition: all .2s linear;
@@ -322,12 +306,13 @@ body {
 .fs-11 {
     font-size: 11px !important;
 }
+
 .fs-13 {
     font-size: 13px !important;
 }
 
 .purchase_card {
-    background:linear-gradient(rgba(0, 0, 0, .3),rgba(0, 0, 0, .3)), url('imgs/1612579354_5-p-fon-dlya-prezentatsii-oranzhevii-s-zelenim-6.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url('imgs/1612579354_5-p-fon-dlya-prezentatsii-oranzhevii-s-zelenim-6.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -371,12 +356,14 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.menue_img{
+
+.menue_img {
     width: 35px;
     height: 35px;
     border-radius: 50%;
 }
-.footer_icon{
+
+.footer_icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -385,10 +372,54 @@ body {
     transition: all .3s linear;
     cursor: pointer;
 }
-.footer_icon:hover{
+
+.footer_icon:hover {
     color: #ffc107;
 }
 
+@keyframes growProgressBar {
+
+    0%,
+    33% {
+        --pgPercentage: 0;
+    }
+
+    100% {
+        --pgPercentage: var(--value);
+    }
+}
+
+@property --pgPercentage {
+    syntax: "<number>";
+    inherits: false;
+    initial-value: 0;
+}
+
+div[role="progressbar"] {
+    --size: 15rem;
+    --fg: #369;
+    --bg: #def;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(closest-side,
+            white 80%,
+            transparent 0 99.9%,
+            white 0),
+        conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: calc(var(--size) / 7);
+    color: var(--fg);
+}
+
+div[role="progressbar"]::before {
+    counter-reset: percentage var(--value);
+    content: counter(percentage) "%";
+}
 
 @media screen and (max-width:1000px) {
     .singupCard {
