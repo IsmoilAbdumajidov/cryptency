@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
-
-* {
+@import url('TTNorms-Medium/style.css');
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
-
+    font-family: 'TT Norms';
+}    
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap'); */
 *::selection {
     background-color: #FFC107;
 }
@@ -131,17 +130,8 @@ body {
     font-size: 12px;
 }
 
-.attention {
-    color: #000;
-    background: #ffc10718;
-    border: 1px solid #FFC107;
-    list-style: circle;
-}
 
-.attention li::marker {
-    color: #FFC107 !important;
-    background: #FFC107 !important;
-}
+
 
 .singupCard {
     width: 35%;
@@ -421,6 +411,35 @@ div[role="progressbar"]::before {
     content: counter(percentage) "%";
 }
 
+
+
+.cardKabinet{
+    border: 2px dotted red !important;
+}
+.gradientBG{
+    background: linear-gradient(to bottom, rgba(213, 113, 62, 0.9) 0%, rgba(241, 161, 22, 0.57) 100%);
+}
+.attention {
+    color: #000;
+    background: linear-gradient(to bottom, rgba(58, 54, 52, 0.9) 0%, rgba(0, 0, 0, 0.57) 100%);
+    border: 1px solid #FFC107;
+    border-radius: 5px;
+    color: #fff;
+}
+.attention ul{
+    list-style: none;
+    opacity: .8;
+}
+.attention ul a{
+    color: #FFC107;
+}
+.paperPlane{
+    width: 100px !important;
+   position: absolute; 
+   top: -65px;
+   left: -27px;
+
+}
 @media screen and (max-width:1000px) {
     .singupCard {
         width: 90%;
