@@ -440,6 +440,9 @@ div[role="progressbar"]::before {
    left: -27px;
 
 }
+.br-radius{
+    border-radius: 50px !important;
+}
 @media screen and (max-width:1000px) {
     .singupCard {
         width: 90%;
